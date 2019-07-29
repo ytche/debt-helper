@@ -1,4 +1,4 @@
-package site.bigbear.debthelper;
+package site.bigbear.debt_helper;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
