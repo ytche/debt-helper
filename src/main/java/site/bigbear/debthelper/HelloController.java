@@ -1,4 +1,4 @@
-package site.bigbear.debt_helper;
+package site.bigbear.debthelper;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
