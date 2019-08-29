@@ -9,6 +9,7 @@ import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.CollectionUtils;
 import site.bigbear.debthelper.model.TestModel;
 import site.bigbear.debthelper.repository.TestRepository;
 
@@ -33,8 +34,9 @@ public class DebtHelperApplicationTests {
 
   @Test
   @Rollback(value = false)
-  public void testIlist() {
+  public void testlist() {
     List<TestModel> modelList = Lists.newArrayList(this.testRepository.findAll());
+    assert !CollectionUtils.isEmpty(modelList);
     modelList.forEach(p->System.out.println(p.getName()));
   }
 }

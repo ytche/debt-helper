@@ -5,6 +5,7 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import site.bigbear.debthelper.model.TestModel;
 import site.bigbear.debthelper.repository.TestRepository;
 
@@ -14,6 +15,7 @@ import site.bigbear.debthelper.repository.TestRepository;
  */
 @SpringBootApplication
 @EnableJpaRepositories
+@EnableScheduling
 public class DebtHelperApplication {
   @Autowired
   private TestRepository testRepository;
