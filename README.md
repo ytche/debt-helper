@@ -49,7 +49,7 @@
 | --------- | ------- | ---- | ------ | ------------ | -------------------------------- |
 | 公共字段  |         |      |        |              ||
 | name | varchar | 100 | 名称 | 否 ||
-| nickname | varchar | 100 | 昵称 | 是 ||
+| nick_name | varchar | 100 | 昵称 | 是 ||
 | telephone | varchar | 20 | 手机号 | 是 ||
 | creditor_id | bigint | 20 | 债主id | 否 ||
 | alert_status | tinyint | 2 | 是否有不良记录 | 否 |0否1是,默认否|
@@ -91,5 +91,3 @@
 | create_time | datetime |      | 创建时间 | 否       | 默认当前时间,current_timestamp() |
 | update_time | datetime |      | 更新时间 | 否       | 默认更新时的当前时间             |
 | debt_id | bigint | 20 | 超期债务id | 否 | 关联债务表 |
-|  |  | |  |  |  |
-|  |  | |  |  |  |

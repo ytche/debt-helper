@@ -17,8 +17,8 @@ import java.io.Serializable;
  */
 @MappedSuperclass
 @Data
-public class BaseModal implements Serializable {
-  @Id @GeneratedValue private String id;
+public class BaseEntity implements Serializable {
+  @Id @GeneratedValue private Long id;
   private String createUser;
   private String updateUser;
   @CreationTimestamp private String createTime;
