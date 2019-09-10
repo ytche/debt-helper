@@ -15,7 +15,7 @@ import javax.persistence.Table;
  */
 @Data
 @Entity
-@Table(name = "base_entity")
+@Table(name = "base_user")
 @Accessors(chain = true)
 @EqualsAndHashCode(callSuper = true)
 public class User extends BaseEntity {

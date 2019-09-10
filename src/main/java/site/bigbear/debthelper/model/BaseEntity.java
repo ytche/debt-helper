@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * 基础modal
@@ -21,6 +22,6 @@ public class BaseEntity implements Serializable {
   @Id @GeneratedValue private Long id;
   private String createUser;
   private String updateUser;
-  @CreationTimestamp private String createTime;
-  @UpdateTimestamp private String updateTime;
+  @CreationTimestamp private Date createTime;
+  @UpdateTimestamp private Date updateTime;
 }

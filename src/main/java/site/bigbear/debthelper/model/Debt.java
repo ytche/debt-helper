@@ -15,7 +15,7 @@ import java.util.Date;
  * @date 2019-09-06
  */
 @Entity
-@Table(name = "base_entity")
+@Table(name = "base_debt")
 @Data
 @Accessors(chain = true)
 @EqualsAndHashCode(callSuper = true)
