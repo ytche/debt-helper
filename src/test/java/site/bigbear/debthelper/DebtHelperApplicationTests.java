@@ -8,11 +8,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 import site.bigbear.debthelper.model.TestModel;
 import site.bigbear.debthelper.repository.TestRepository;
-
+import static org.junit.Assert.*;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
@@ -39,4 +38,5 @@ public class DebtHelperApplicationTests {
     assert !CollectionUtils.isEmpty(modelList);
     modelList.forEach(p->System.out.println(p.getName()));
   }
+
 }
