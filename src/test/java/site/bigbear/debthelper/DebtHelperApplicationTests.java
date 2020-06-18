@@ -18,25 +18,5 @@ import java.util.List;
 @SpringBootTest
 @EnableTransactionManagement
 public class DebtHelperApplicationTests {
-  @Autowired private TestRepository testRepository;
-
-  @Test
-  public void contextLoads() {}
-
-  @Test
-  @Rollback(value = false)
-  public void testInsert() {
-    assert this.testRepository.save(new TestModel().setName("ttest")).getId() > 0;
-    List<TestModel> modelList = Lists.newArrayList(this.testRepository.findAll());
-    modelList.forEach(p->System.out.println(p.getName()));
-  }
-
-  @Test
-  @Rollback(value = false)
-  public void testlist() {
-    List<TestModel> modelList = Lists.newArrayList(this.testRepository.findAll());
-    assert !CollectionUtils.isEmpty(modelList);
-    modelList.forEach(p->System.out.println(p.getName()));
-  }
 
 }
